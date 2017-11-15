@@ -10,21 +10,48 @@
  */
 .logo-1 {
     position: absolute;
-    top: 70px;
-    left: -140px;
+    top: 10px;
+    left: -150px;
 }
 
 .site-logo-text-icon {
     img {
         vertical-align: bottom;
+        max-width: 870px;
     }
+}
+
+body {
+    max-width: 900px;
+    margin: 8px auto;
+    min-height: 30em;
+    border: 1px solid #999;
+    padding-top: 1em;
+}
+
+.flash-wrap img {
+    max-width: 900px;
+    height: auto;
+}
+
+article {
+    padding: 1em;
+}
+
+article img {
+    max-width: 865px;
+    height: auto;
 }
 
 /**---------------------------------------------------------------
  *  Responsiv design
  */
 
- @media screen and (max-width: 900px) {
+img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 900px) {
     .site-logo-text {
         width: 40%;
     }
@@ -38,8 +65,28 @@
     }
 }
 
-@media screen and (max-width: 520px) {
-   .navbar2 {
-       display: none;
-   }
+
+@media screen and (max-width: 750px) {
+    .sidebar {
+        //width: 100%;
+        display: none;
+    }
 }
+
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 560px) {
+     .site-logo-text {
+         width: 90%;
+     }
+
+     .navbar2 {
+         display: none;
+     }
+ }

@@ -2,38 +2,32 @@
  *  Header
  */
 
-// Size of max navbar button
-.rm-max .rm-small .rm-button {
-    font-size: 2em;
+@nav-theme: gold;
+
+.border(@radius: 0) {
+    border-top: 1px solid darken(@nav-theme, 10%);
+    border-right: 1px solid darken(@nav-theme, 10%);
+    border-left: 1px solid darken(@nav-theme, 10%);
+    border-top-left-radius: @radius;
+    border-top-right-radius: @radius;
 }
 
-@maxButtonFontSize: 2em;
-
-// Style navbar
-.rm-desktop li {
-    background-color: #096;
+header {
+    background-color: gold;
 }
 
-@navbarItemBgColor: #096;
-
-
-// Size each item in the header
-.site-logo-text,
-.navbar2,
 .profile {
-    float: left;
-    width: 30%;
+    margin-top: 20px;
+    display: inline-block;
 }
 
-.site-header {
-    height: 80px;
-}
+.navbar2 {
+    background-color: @nav-theme;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 30px;
 
-// Site title
-.site-logo-text {
-    font-size: 2em;
-
-    a {
-        text-decoration: none;
+    & li {
+        .border(12px);
     }
 }
