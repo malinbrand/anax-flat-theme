@@ -1,0 +1,11 @@
+/**
+ * Show grid.
+ */
+.showGrid(@maxWidth: 1100px, @gridImage) {
+    background: url("@{gridImage}");
+    background-size: 100% auto;
+
+    @media (min-width: @maxWidth) {
+        background-size: @maxWidth auto;
+    }
+}

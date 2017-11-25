@@ -3,6 +3,7 @@
  */
 
 @nav-theme: gold;
+@magicNumber: 24px;
 
 .border(@radius: 0) {
     border-top: 1px solid darken(@nav-theme, 10%);
@@ -12,19 +13,19 @@
     border-top-right-radius: @radius;
 }
 
-header {
+/*header {
     background-color: gold;
 }
-
+*/
 .profile {
-    margin-top: 20px;
+    margin-top: @magicNumber;
     display: inline-block;
 }
 
 .navbar2 {
-    background-color: @nav-theme;
+    //background-color: @nav-theme;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 24px;
     margin-left: 30px;
 
     & li {
