@@ -1,0 +1,106 @@
+/**
+* Anax Flat theme.
+*/
+@import url('https://fonts.googleapis.com/css?family=Nunito|Vollkorn+SC');
+@import url(modules.less);
+
+@nav-theme: #F6A7E2;
+
+@fontFamilyHeadings:  'Vollkorn SC';
+@fontFamilyBody:      'Nunito';
+
+.inner-wrap {
+    &.inner-wrap-header {
+        background-color: white;
+        font-family: 'Vollkorn SC';
+        font-size: 1.25em;
+    }
+
+    a, a:visited, a:hover {
+        color: #82316E;
+    }
+    a:active {
+        color: #F6A7E2;
+    }
+}
+
+.outer-wrap-footer {
+    background-color: #F6A7E2;
+}
+
+.sidebar {
+    background-color: #F6A7E2;
+}
+
+main {
+    background-color: white;
+}
+
+.after-main {
+    background-color: white;
+}
+
+.footer-column {
+
+    background-color: lightgrey;
+    color: black;
+    a, a:visited {
+        color: #82316E;
+    }
+}
+
+.site-footer {
+    background-color: lightgrey;
+    color: black;
+    a, a:visited {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .site-logo-text {
+        .column(4);
+    }
+
+    .navbar2 {
+        .column(18);
+    }
+
+    .profile {
+        .column(2);
+    }
+}
+
+
+@media screen and (max-width: 1450px) {
+    .logo-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .sidebar {
+        display: none;
+    }
+    main.has-sidebar {
+        .column(@columns);
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .footer-column {
+        .column(@columns);
+    }
+}
+
+
+@media screen and (max-width: 975px) {
+     .site-logo-text {
+         .column(20);
+     }
+
+     .navbar2 {
+         display: none;
+     }
+ }

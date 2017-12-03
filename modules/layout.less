@@ -38,6 +38,13 @@
             width: @gridWidth;
         }
     }
+
+    a, a:visited, a:hover {
+        color: black;
+    }
+    a:active {
+        color: gold;
+    }
 }
 
 .site-header {
@@ -92,7 +99,7 @@
 main {
     .column(@columns);
     background-color: lighten(gold, 40%);
-    opacity: 0.7;
+    //opacity: 0.7;
 
     img {
         .column(24);
@@ -126,7 +133,7 @@ main.has-sidebar {
 .site-footer {
     .column(@columns);
     background-color: gold;
-    opacity: 0.5;
+    //opacity: 0.5;
     color: black;
     text-align: center;
 
@@ -137,20 +144,20 @@ main.has-sidebar {
 
 @media screen and (max-width: 900px) {
     .site-logo-text {
-        .column(8);
+        .column(4);
     }
 
     .navbar2 {
-        .column(12);
+        .column(18);
     }
 
     .profile {
-        .column(4);
+        .column(2);
     }
 }
 
 
-@media screen and (max-width: 1460px) {
+@media screen and (max-width: 1450px) {
     .logo-1 {
         display: none;
     }
@@ -173,7 +180,7 @@ main.has-sidebar {
 }
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 750px) {
      .site-logo-text {
          .column(20);
      }
