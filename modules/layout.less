@@ -36,6 +36,7 @@
         height: @magicNumber * 7;
         img {
             width: @gridWidth;
+            .push(0.005);
         }
     }
 
@@ -99,7 +100,6 @@
 main {
     .column(@columns);
     background-color: lighten(gold, 40%);
-    //opacity: 0.7;
 
     img {
         .column(24);
@@ -133,7 +133,6 @@ main.has-sidebar {
 .site-footer {
     .column(@columns);
     background-color: gold;
-    //opacity: 0.5;
     color: black;
     text-align: center;
 
